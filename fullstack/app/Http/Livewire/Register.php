@@ -10,9 +10,9 @@ class Register extends Component
 {
 
     public $form = [
-        'name'             => '',
-        'email'            => '',
-        'password'         => '',
+        'name'                  => '',
+        'email'                 => '',
+        'password'              => '',
         'password_confirmation' => ''
     ];
 
