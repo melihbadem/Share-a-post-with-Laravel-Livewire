@@ -19,10 +19,9 @@ class Register extends Component
     public function register()
     {
         $this->validate([
-            'form.email'         => ['required', 'email'],
-            'form.name'          => ['required'],
-            'form.password'      => ['required', 'confirmed'],
-
+            'form.email'    => ['required', 'email'],
+            'form.name'     => ['required'],
+            'form.password' => ['required', 'confirmed']
         ]);
 
         User::create([
