@@ -19,7 +19,7 @@ class Login extends Component
             'form.password' => ['required']
         ]);
 
-        if (Auth::attempt(['email'  => $this->form['email'],'password' => $this->form['password']])) {
+        if (Auth::attempt(['email' => $this->form['email'],'password' => $this->form['password']])) {
             return redirect()->route('home');
         }
 
