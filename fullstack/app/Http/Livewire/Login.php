@@ -22,9 +22,8 @@ class Login extends Component
         if (Auth::attempt(['email'  => $this->form['email'],'password' => $this->form['password']])) {
             return redirect()->route('home');
         }
-        else {
-            session()->flash('message', 'Username or password is invalid');
-        }
+
+        session()->flash('message', 'Username or password is invalid'); 
     }
     
     public function render() {
